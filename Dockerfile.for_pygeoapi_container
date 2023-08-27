@@ -1,0 +1,5 @@
+# Base image
+FROM geopython/pygeoapi:latest
+
+# Copy config into Image.
+COPY ./local.config.yml /pygeoapi/local.config.yml

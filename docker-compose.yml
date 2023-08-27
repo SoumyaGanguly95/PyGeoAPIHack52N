@@ -1,0 +1,12 @@
+version: "3.3"
+
+services:
+  pygeoapi:
+    container_name: for_pygeoapi_container
+    build:
+      context: .
+      dockerfile: Dockerfile.for_pygeoapi_container
+    ports:
+      - 5000:80
+    volumes:
+      - ./data:/data
